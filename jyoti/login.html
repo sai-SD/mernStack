@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="logo">LOGO</div>
+            <div class="menu">
+                <div class="nav-item">Home</div>
+                <div class="nav-item">About</div>
+                <div class="nav-item" id="add">Add Product</div>
+                <div id="sign">Sign In</div>
+                <div id="log">Log in</div>
+            </div>
+        </div>
+    <form action="#" id="login">
+        <div id="cross-login">X</div>
+        <div class="login-header">Log In</div>
+        <div class="login-input">
+            <div class="input">
+                <label for="username">Username</label><br>
+                    <input id="username" type="text" placeholder="UserName" required>
+                    <div id="span">Username not found</div>
+            </div>
+            <div class="input">
+                <label for="password">Password</label><br>
+                    <input id="password" type="password" placeholder="Password" required>
+                    <div id="span2">Incorrect password</div>
+            </div>
+            <div class="input">
+                <button id="btn" type="button">Log In</button>
+            </div>
+            <div id="i-input">
+                <!-- <button id="btn">Sign In</button> -->
+                Don't Have a Account?<u>Create One</u>
+
+            </div>
+        </div>
+    </form>
+    <script src="login.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

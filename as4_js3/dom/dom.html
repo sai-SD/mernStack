@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // let x = document.createElement("h1");
+    // x.innerHTML = "HEADING";
+    // x.style.color = "blue";
+    // x.style.border = "2px solid red";
+    // x.setAttribute("id","headingId");
+    // x.setAttribute("class","headingClass");
+    // let inp = document.createElement("input");
+    // let body = document.querySelector("body");
+    // body.append(x,inp)
+    let arr =[];
+    function push(){
+        arr.push(inp.value);
+        console.log(arr);
+        inp.value='';
+        display();
+    }
+    let i=0;
+    function display(){
+        // for(let i=0;i<arr.length;i++){
+        //     let head = document.createElement("h1");
+        //     head.innerText = arr[i];
+        //     body.append(head);
+        // }
+        console.log(arr[(arr.length)-1]);
+        let head = document.createElement("h1");
+        head.innerText = arr[i++];
+        div.append(head);
+    }
+    let body = document.querySelector("body");
+    let inp = document.createElement("input");
+    inp.setAttribute("id","inp");
+    let btn = document.createElement("button");
+    btn.innerText ="click";
+    btn.addEventListener("click",push);
+    let div = document.createElement("div");
+    body.append(inp,btn,div)
+</script>

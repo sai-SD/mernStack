@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="nav"></div>
+    <h1>login page</h1>
+    <h1>login page</h1>
+    <!-- <a href="login.html">login</a>
+    <a href="about.html">about</a>
+    <a href="homePage.html">home</a> -->
+</body>
+</html>
+<script type="module">
+    import {navbar} from "./navbar.js";
+    // function navbar(){
+    //     return `
+    //     <a href="login.html">login</a>
+    //     <a href="about.html">about</a>
+    //     <a href="homePage.html">home</a>`;
+    // }
+    document.getElementById("nav").innerHTML= navbar();
+</script>

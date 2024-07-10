@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+        }
+        .link{
+            position: absolute;
+            padding: 10px 20px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        img{
+            width: 70%;
+        }
+        .image{
+            width: 50%;
+            padding: 20px;
+        }
+        li{
+            list-style:none;
+            text-transform: uppercase;
+        }
+        nav ul li{
+            list-style: none;
+            padding: 20px;
+            font-size: 30px;
+            color: white;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        li:hover{
+            background-color: rgb(6, 6, 186);
+        }
+        nav{
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>home</li>
+            <li>academics</li>
+            <li>administration</li>
+            <li>about us</li>
+        </ul>
+    </nav>
+    <div class="container">       
+        <div class="image">
+            <img src="https://silicon.ac.in/wp-content/uploads/2021/07/1-1-1.jpg" alt="img">
+            <div class="link">
+                <a href="/contact.html"><p>click here to contact us</p></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

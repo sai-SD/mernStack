@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Input Types Example</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        /* margin: 20px; */
+    }
+    form {
+        max-width: 600px;
+        margin: auto auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+    }
+    label {
+        /* display: inline; */
+        display: block;
+        margin-bottom: 10px;
+    }
+    input{
+        /* width: calc(100% - 20px); */
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+    /* input[type="submit"], input[type="reset"], input[type="button"] {
+        width: auto;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    } */
+    /* .checkbox{
+        display: block;
+    } */
+    .sameLine{
+        width:auto;
+    }
+</style>
+</head>
+<body>
+
+<form>
+    <!-- <label for="button">Button:</label>
+    <input type="button" id="button" value="Button"> -->
+
+    <!-- <label for="checkbox">Checkbox:</label> -->
+    <div class="checkbox">Checkbox: <input style="width:auto" type="checkbox" id="checkbox"></div>
+
+    <label for="color">Color:</label>
+    <input type="color" id="color">
+
+    <label for="date">Date:</label>
+    <input type="date" id="date">
+
+    <label for="datetime">Datetime:</label>
+    <input type="datetime" id="datetime">
+
+    <label for="datetime-local">Datetime-local:</label>
+    <input type="datetime-local" id="datetime-local">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email">
+
+    <label for="file">File:</label>
+    <input type="file" id="file">
+
+    <!-- <label for="hidden">Hidden:</label>
+    <input type="hidden" id="hidden" value="hidden value"> -->
+
+    <label for="image">Image:</label>
+    <!-- <input type="image" id="image" src="https://via.placeholder.com/150"> -->
+    <input type="image" id="image">
+
+    <label for="month">Month:</label>
+    <input type="month" id="month">
+
+    <label for="number">Number:</label>
+    <input type="number" id="number">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password">
+
+    <label>Radio:</label>
+    <input class="sameLine" type="radio" id="radio1" name="radio"><label for="radio1">Option 1</label>
+    <input class="sameLine" type="radio" id="radio1" name="radio"><label for="radio1">Option 1</label>
+    <input class="sameLine" type="radio" id="radio1" name="radio"><label for="radio1">Option 1</label>
+    <!-- <div for="radio2">Option 2<input class="sameLine" type="radio" id="radio2" name="radio"></div>
+    <div for="radio3">Option 3<input class="sameLine" type="radio" id="radio3" name="radio"></div> -->
+     
+    <!-- <input type="radio" id="radio2" name="radio"> <label for="radio2">Option 2</label>
+    <input type="radio" id="radio3" name="radio"> <label for="radio3">Option 3</label> -->
+
+    <label for="range">Range:</label>
+    <input type="range" id="range" min="0" max="100">
+
+    <!-- <label for="reset">Reset:</label>
+    <input type="reset" id="reset" value="Reset"> -->
+
+    <label for="search">Search:</label>
+    <input type="search" id="search">
+
+    <!-- <label for="submit">Submit:</label>
+    <input type="submit" id="submit" value="Submit"> -->
+
+    <label for="tel">Tel:</label>
+    <input type="tel" id="tel">
+
+    <label for="text">Text:</label>
+    <input type="text" id="text">
+
+    <label for="time">Time:</label>
+    <input type="time" id="time">
+
+    <label for="url">URL:</label>
+    <input type="url" id="url">
+
+    <label for="week">Week:</label>
+    <input type="week" id="week">
+</form>
+
+</body>
+</html>

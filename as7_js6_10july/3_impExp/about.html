@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- retun statement uses -->
+    <!-- import and export statements:- -->
+    <div id="nav"></div>
+    <h1>about page</h1>
+    <h1>about page</h1>
+    <h1>about page</h1>
+    <!-- <a href="login.html">login</a>
+    <a href="about.html">about</a>
+    <a href="homePage.html">home</a> -->
+</body>
+</html>
+<script type="module">
+    import {navbar} from "./navbar.js";
+    // function navbar(){
+    //     return `
+    //     <a href="login.html">login</a>
+    //     <a href="about.html">about</a>
+    //     <a href="homePage.html">home</a>`;
+    // }
+    // let x = navbar();
+    // console.log(x);
+    // let p = document.getElementById("p");
+    document.getElementById("nav").innerHTML = navbar();
+</script>

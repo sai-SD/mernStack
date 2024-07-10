@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .container{
+            width:300px;
+            align-items: center;
+            border: 1px solid black;
+            margin:10px auto 100px;
+            padding: 10px;
+        }
+        .container input{
+            /* width: calc(100% - 5px); */
+            /* width: 100%; */
+            border-radius: 5px;
+            height:60px;
+            font-size: 45px;
+            text-align: right;
+            border-color: gray;
+        }
+        .buttonBox{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+        }
+        button{
+            width:70px;
+            height: 45px;
+            margin: 5px 0px;
+            border-radius:5px;
+            border-color: gray;
+        }
+        p{
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <p>CALCULATOR</p>
+    <div class="container">
+        <input type="number" placeholder="000.00">
+        <!-- <div class="display"> -->
+        <!-- </div> -->
+        <div class="buttonBox">
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator">+</button>
+        </div>
+        <div class="buttonBox">
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator">-</button>
+        </div>
+        <div class="buttonBox">    
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="operator">*</button>
+        </div>
+        <div class="buttonBox">
+            <button class="number">0</button>
+            <button class="special">C</button>
+            <button class="special">=</button>
+            <button class="operator">/</button>
+        </div>
+    </div>
+</body>
+
+</html>

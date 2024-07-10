@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let body = document.querySelector("body");
+    let dataArr =[]
+    console.log(dataArr);
+    async function fetchData(){
+        let res = await fetch ("https://fakestoreapi.com/products");
+        let data = await res.json();
+    }
+    fetchData();
+    function display(data){
+        data.forEach((el)=>{
+            console.log(el);
+        })
+    }
+    let arr=[1,2,3,4,5,6,7,8,9]
+    arr.forEach((i,el)=>{
+        console.log(i,el,'forEach');
+    })
+
+</script>
