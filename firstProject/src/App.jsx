@@ -2,12 +2,20 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
+import Button from './components/Button'
 function App() {
   const [count, setCount] = useState(0)
-
+  function log(){
+    console.log('function log called');
+  }
   return (
     <>
+      <Button a={"red"} b={"rounded"} c={"click1"}/>
+      <Button a={"green"} c={"click1"}/>
+      <Button a={"blue"} c={"click1"}/>
+      <input type="text" onChange={(e)=>{
+        console.log(e.target.value);
+      }}/>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
