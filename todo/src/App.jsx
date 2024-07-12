@@ -1,7 +1,5 @@
-// import { useState } from "react"
 import React from 'react'
 import TodoComp from "./components/TodoComp";
-// import UseEffect from './components/UseEffect'
 function App() {
   const [inputValue,setInputValue] = React.useState("");
   const[todoArr,setTodoArr] = React.useState([]);
@@ -43,4 +41,8 @@ function App() {
     </div>
   );
 }
+<<<<<<< HEAD
 export default App
+=======
+export default App
+>>>>>>> 2166d10ef7908d8923c2df175782cf9c08fe8431
