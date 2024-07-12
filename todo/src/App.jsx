@@ -13,7 +13,6 @@ function App() {
     console.log(todoArr);
   }
   function handleDel(id){
-    // console.log(id);
     let delTodoArr = todoArr.filter((el) => el.id !==id );//choose the elements whose id is not same as the given id
     setTodoArr(delTodoArr);
   }
