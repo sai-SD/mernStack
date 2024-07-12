@@ -1,7 +1,6 @@
 import React from 'react'
 
 const TodoComp = ({todo,status,delFun,id,updFun}) => {
-    // console.log(todo,status,id);
   return (
     <div>
         <h1>{todo}</h1>
