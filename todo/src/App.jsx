@@ -1,10 +1,10 @@
 import React from 'react'
-import TodoComp from "./components/TodoComp";
-function App() {
+import TodoComp from "./components/TodoComp"
+function App(){
   const [inputValue,setInputValue] = React.useState("");
   const[todoArr,setTodoArr] = React.useState([]);
   function pushData (){
-    let todoObj ={
+    let todoObj= {
       id:Math.random()+Date.now()+inputValue,
       todo:inputValue,
       isCompleted:false

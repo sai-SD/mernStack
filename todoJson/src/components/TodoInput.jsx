@@ -1,6 +1,9 @@
-import React from 'react'
-const TodoInput = ()=>{
+import React,{useState} from 'react'
+
+const TodoInput=()=>
+{
     const [todo,setTodo]=useState("")
+
     async function postData(){
         let obj={
             id:Math.random()+Date.now()+todo,
@@ -17,12 +20,12 @@ const TodoInput = ()=>{
         let data = await res.json();
         console.log(data);
     }
-
     return(
         <div>
             <input type="text" placeholder='add todo' onChange={(e)=>setTodo(e.target.value)}/>
             <button onClick={postData}>Submit</button>
-
         </div>
     )
 }
+
+export default TodoInput
