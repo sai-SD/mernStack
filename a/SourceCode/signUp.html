@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a  href="addProd.html">add</a>
+    <a href="homePage.html">home</a>
+    <a href="login.html">login</a>
+    <a href="signUp.html">signUp</a>
+    <br>
+    <input type="text" id="userName">
+    <input type="password" name="" id="pass">
+    <button onclick="signUpFun()">SignUp</button>
+</body>
+</html>
+<script>
+    let signUpData = JSON.parse(localStorage.getItem("signUpArr")) || []
+    console.log(signUpData);
+    // let x = localStorage.getItem("signUpArr");
+    // if(x === null){
+    //     signUpData = [];
+    // } else {
+    //     signUpData = JSON.parse(x)
+    // }
+        let flag = false;
+    let userName = document.querySelector("#userName")
+    let pass = document.querySelector("#pass")
+
+    function signUpFun(){
+        let obj = {
+            userName: userName.value,
+            pass: pass.value
+        }
+
+        // a 1234
+        //5 === "5"
+        // [{a,1234},{aa 1234},]
+        // false - true
+        for(let i=0; i<signUpData.length; i++){ 
+            if(signUpData[i].userName === obj.userName ){ 
+                flag = true;
+                alert("user already exist")
+            } else {
+                flag = false;
+            }
+        }
+        if(flag === false){
+            signUpData.push(obj)
+            localStorage.setItem("signUpArr",JSON.stringify(signUpData))
+        }
+        console.log(signUpData);
+
+    }
+</script>
+
+<!-- [
+    {
+        userName:"asdef",
+        pass:"sdefg"
+    },
+    {
+        userName:"asdef",
+        pass:"sdefg"
+    },
+    {
+        userName:"asdef",
+        pass:"sdefg"
+    },
+    {
+        userName:"asdef",
+        pass:"sdefg"
+    }
+] -->

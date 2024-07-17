@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="addProd.html">add</a>
+    <a href="homePage.html">home</a>
+    <a href="login.html">login</a>
+    <a href="signUp.html">signUp</a>
+
+    <h1>login</h1>
+    <input type="text" id="userName">
+    <input type="text" id="pass">
+    <button onclick="login()">login</button>
+</body>
+</html>
+<script>
+
+    let signUpData = JSON.parse(localStorage.getItem("signUpArr")) || []
+    let falg = false;
+     // let x = localStorage.getItem("signUpArr");
+    // if(x === null){
+    //     signUpData = [];
+    // } else {
+    //     signUpData = JSON.parse(x)
+    // }
+    let userName = document.querySelector("#userName") 
+    let pass = document.querySelector("#pass") 
+
+    console.log(signUpData);
+
+    function login(){
+        for(let i=0; i<signUpData.length; i++){
+            if(signUpData[i].userName === userName.value && signUpData[i].pass === pass.value ){ //aaa == aa
+                flag = true;
+            } 
+            //[{a,cds}, {aa,fds}, {aaa,dsfg}]
+            //aa
+            //false - true - false
+        }
+        if(flag === true){
+            alert("login success")
+            // window.open("./homePage.html")
+        } else {
+            alert("login failed")
+        }
+        flag = false;
+    }
+
+
+</script>
