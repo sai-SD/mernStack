@@ -1,15 +1,44 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Card, CardHeader, Image, CardBody, CardFooter, Stack, Heading, Divider, ButtonGroup, Button, Text } from '@chakra-ui/react'
 
 const ProdCrad = (el) => {
   return (
     <div style={{ width:"300px", border:"1px solid black", margin:"auto"}}>
-        <img style={{width:"200px"}} src={el.image} alt={el.id} />
+        {/* <img style={{width:"200px"}} src={el.image} alt={el.id} />
         <h1>{el.title}</h1>
         <p>{el.description}</p>
         <p>{el.price}</p>
         <p>{el.category}</p>
-        <Link to={`/product/${el.id}`}>More Details</Link>
+        <Link to={`/product/${el.id}`}>More Details</Link> */}
+        <Card maxW='sm'>
+  <CardBody>
+    <Image
+      src={el.image}
+      borderRadius='lg'
+    />
+    <Stack mt='6' spacing='3'>
+      <Heading size='md'>{el.title}</Heading>
+      <Text>
+        {el.description}
+      </Text>
+      <Text color='blue.600' fontSize='2xl'>
+        Rs.{el.price}
+      </Text>
+    </Stack>
+  </CardBody>
+  <Divider />
+  <CardFooter>
+    <ButtonGroup spacing='2'>
+      <Button variant='solid' colorScheme='blue'>
+        Buy now
+      </Button>
+      <Button variant='ghost' colorScheme='blue'>
+        Add to cart
+      </Button>
+    </ButtonGroup>
+  </CardFooter>
+</Card>
     </div>
   )
 }
