@@ -84,10 +84,10 @@
 
 .social-media-logo ul {
     display: flex;
+    flex-direction: column;
     justify-content: left;
-    flex-direction: row;
-    gap: 10px;
 }
+
 
 /* *********************************************************** */
 /* FOOTER NAV STYLES */
@@ -129,7 +129,7 @@
 .item-menu ul li {
     list-style: none;
     color: rgba(94, 94, 94);
-    font-size: 13px;
+    font-size: 2vw;
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
@@ -138,15 +138,18 @@
     text-transform: uppercase;
 }
 
-@media screen and (min-width: 940px) {
+@media (min-width: 800px) {
     .main-area {
-        width: 940px;
+        width: 800px;
     }
     .col-nav {
         width: 235px;
     }
     .item-menu h2 {
         width: 199px;
+    }
+    .item-menu ul li{
+        font-size: 1vw;
     }
 }
 
@@ -193,7 +196,13 @@
     border-radius: 0.15rem;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+    .basicButton {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
     .full-bar {
         width: 100% !important;
         width: auto;
